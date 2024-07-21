@@ -1,2 +1,2 @@
 # MaxWorkstaion-Rev2
- My personal configuration for my main PC and laptops.
+nei nei what it looks outside? can we vist it?
