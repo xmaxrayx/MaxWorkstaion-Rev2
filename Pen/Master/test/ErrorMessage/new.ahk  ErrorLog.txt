@@ -1,0 +1,4 @@
+﻿\\\[new.ahk]------------[11:56:01 AM 7/24/2024]\\\
+Error on line 9: This value of type "cls" has no method named "show".
+
+

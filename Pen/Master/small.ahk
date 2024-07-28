@@ -37,7 +37,7 @@ ListGUI:= {
 overlayMiniGUI()
 
 
-overlayMiniGUI(){
+overlayMiniGUI(){ ;did
 
 
     location :={
@@ -62,6 +62,7 @@ overlayMiniGUI(){
         h : _h
     }
     
+    
     startButton.OnEvent("Click",(*)=> ListGUI.MangerMainGUI__info.thisGUI.Show( "x" (thisGui.w + 4)  "y" location.y))
 
 
@@ -85,9 +86,14 @@ overlayMiniGUI(){
 
 
 
-MangerMainGUI(){
-    mainGui := Gui("AlwaysOnTop   -Caption")
-    mainGui.Add("Button" , ,"Run App:")
+class MangerMainGUI { ;did
+
+    mainGUI := 0
+    showStatus := 0
+    __New(){
+    this.showStatus := 0
+    this.mainGui := Gui("AlwaysOnTop   -Caption")
+    this.mainGui.Add("Button" , ,"Run App:")
         .OnEvent("Click",(*)=> do )
     MangerMainGUI.isSHow := 0
 
@@ -96,11 +102,28 @@ MangerMainGUI(){
             
         }
         
-        ListGUI.RunMainSmallGUi__return_info.thisGUI.Show()
+        ListGUI.RunMainSmallGUi__return_info
+    }
+
+    show(){
+        this.mainGui.Show()
+        this.showStatus := 1
+    }
+
+    hide(){
+        this.mainGui.Hide()
+        this.showStatus := 0
     }
 
 
-    return { thisGUI : mainGui , showStatus : MangerMainGUI.isSHow }
+
+
+    return { thisGUI : this.mainGui , showStatus : MangerMainGUI.isSHow }
+    } ;end of __new
+
+
+
+
 }
 
 

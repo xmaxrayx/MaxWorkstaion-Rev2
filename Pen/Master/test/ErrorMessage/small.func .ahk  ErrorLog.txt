@@ -1,0 +1,16 @@
+﻿\\\[small.func .ahk]------------[10:42:03 AM 7/28/2024]\\\
+Error on line 10: Parameter #1 of MsgBox requires a String, but received a Func.
+
+
+\\\[small.func .ahk]------------[10:42:09 AM 7/28/2024]\\\
+Error on line 10: Parameter #1 of MsgBox requires a String, but received a Func.
+
+
+\\\[small.func .ahk]------------[10:42:22 AM 7/28/2024]\\\
+Error on line 10: Parameter #1 of MsgBox requires a String, but received a Func.
+
+
+\\\[small.func .ahk]------------[10:42:46 AM 7/28/2024]\\\
+Error on line 10: Parameter #1 of MsgBox requires a String, but received a Func.
+
+

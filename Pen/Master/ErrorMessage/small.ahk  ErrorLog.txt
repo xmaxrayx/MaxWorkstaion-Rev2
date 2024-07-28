@@ -1,0 +1,44 @@
+﻿\\\[small.ahk]------------[12:00:33 PM 7/24/2024]\\\
+Error on line 65: This value of type "MangerMainGUI" has no property named "thisGUI".
+
+
+\\\[small.ahk]------------[12:00:51 PM 7/24/2024]\\\
+Error on line 65: This value of type "MangerMainGUI" has no property named "thisGUI".
+
+
+\\\[small.ahk]------------[12:01:54 PM 7/24/2024]\\\
+Error on line 65: This value of type "MangerMainGUI" has no property named "thisGUI".
+
+
+\\\[small.ahk]------------[12:02:58 PM 7/24/2024]\\\
+Error on line 65: This value of type "MangerMainGUI" has no property named "thisGUI".
+
+
+\\\[small.ahk]------------[12:03:16 PM 7/24/2024]\\\
+Error on line 65: This value of type "MangerMainGUI" has no property named "thisGUI".
+
+
+\\\[small.ahk]------------[12:05:02 PM 7/24/2024]\\\
+Error on line 66: This value of type "MangerMainGUI" has no property named "thisGUI".
+
+
+\\\[small.ahk]------------[12:05:17 PM 7/24/2024]\\\
+Error on line 66: This value of type "MangerMainGUI" has no property named "thisGUI".
+
+
+\\\[small.ahk]------------[12:08:01 PM 7/24/2024]\\\
+Error on line 66: This value of type "MangerMainGUI" has no property named "thisGUI".
+
+
+\\\[small.ahk]------------[11:09:49 AM 7/27/2024]\\\
+Error on line 66: This value of type "MangerMainGUI" has no property named "thisGUI".
+
+
+\\\[small.ahk]------------[11:09:55 AM 7/27/2024]\\\
+Error on line 66: This value of type "MangerMainGUI" has no property named "thisGUI".
+
+
+\\\[small.ahk]------------[11:11:02 AM 7/27/2024]\\\
+Error on line 66: This value of type "MangerMainGUI" has no property named "thisGUI".
+
+
