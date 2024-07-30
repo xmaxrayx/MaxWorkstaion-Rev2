@@ -1,22 +1,47 @@
 #Requires AutoHotkey >=2.1- <3.0
 #SingleInstance force
-#Include  <maxray\AHKPlusPlus___Folder\AHKPlusPlus___0_2__v>
+#Include  <maxray\AHKPlusPlus___Folder\AHKPlusPlus___0_3__v>
+
+
+global KScreenN := 1
 
 
 
-appList := DrawingAppListGUI()
+
+appList := DrawingAppListGUI([
+    "ClipStudioPaint@C:\Program Files\CELSYS\CLIP STUDIO 1.5\CLIP STUDIO PAINT\CLIPStudioPaint.exe"
+    ,"Krita@C:\Program Files\Krita (x64)\bin\krita.exe@ahk_exe krita.exe"
+    ,"MediBang Paint Pro@C:\Program Files\Medibang\MediBang Paint Pro\MediBangPaintPro.exe"
+    ,"Sketchbook Pro@C:\Program Files\WindowsApps\Sketchbook.SketchbookPro_9.1.34.0_x64__k9x4nk31cvt0g\SketchBookPro\SketchbookPro.exe@ahk_exe SketchbookPro.exe"
+    ,"One note@C:\Program Files\Microsoft Office\root\Office16\ONENOTE.EXE"
+    ," @ "
+
+    ,"ClipStudio@C:\Program Files\CELSYS\CLIP STUDIO 1.5\CLIP STUDIO\CLIPStudio.exe"
+])
 
 
 listLoader__Object := [
     {
         ButtonName : "Run App:",
-        action : ()=> appList.show()
+        ctrlType : "Button",
+        action:  (parm)=> appList.show(parm)
     }
     ,
 
     {
+
+        ButtonName : "Tool",
+        ctrlType : "Button",
+        action : (*)=> (MsgBox("no"))
+
+
+    }
+
+    ,
+    {
         ButtonName : "lool",
-        action : ()=> (MsgBox("no"))
+        ctrlType : "text",
+        action : (*)=> (MsgBox("no"))
     }
 
 ]
@@ -27,7 +52,7 @@ listLoader__Object := [
 
 
 subMaster := SubMainGUIManger(listLoader__Object,"")
-Main := overlayMainLauncher(subMaster)
+Main := overlayMainLauncher(subMaster,KScreenN)
 
 
 Main.show()
@@ -62,18 +87,12 @@ class DrawingAppListGUI {
 
 
 
-    __New(){
+    __New(list){
 
-        this.mainGui := Gui()
+        this.mainGui := Gui("AlwaysOnTop  -Caption +ToolWindow")
 
-        AppList__Array := [
+        AppList__Array := list
 
-            "ClipStudio@C:\Program Files\CELSYS\CLIP STUDIO 1.5\CLIP STUDIO\CLIPStudio.exe"
-            ,"Krita@C:\Program Files\Krita (x64)\bin\krita.exe@ahk_exe krita.exe"
-            ,"MediBang Paint Pro@C:\Program Files\Medibang\MediBang Paint Pro\MediBangPaintPro.exe"
-            ,"Sketchbook Pro@C:\Program Files\WindowsApps\Sketchbook.SketchbookPro_9.1.34.0_x64__k9x4nk31cvt0g\SketchBookPro\SketchbookPro.exe@ahk_exe SketchbookPro.exe"
-            ,"One note@C:\Program Files\Microsoft Office\root\Office16\ONENOTE.EXE"
-        ]
 
 
         loop AppList__Array.Length {
@@ -167,10 +186,24 @@ class DrawingAppListGUI {
 }
 
 
-    show(){
+    show(opt:= ""){
     this.showStatus := 1
-     this.mainGui.Show()
-     
+     this.mainGui.Show(opt)
+     watchGUIandHideIt__timer(guiObj){
+        if  WinActive(guiObj){
+            return
+        }
+
+        else {
+            this.showStatus := 0
+            guiObj.hide()
+            SetTimer(,0)
+        }
+
+    }
+
+    SetTimer(()=>watchGUIandHideIt__timer(this.mainGui),7000)
+
 
 
     }
@@ -195,6 +228,9 @@ class SubMainGUIManger {
     showStatus := 0
     outsideGUICaller := 0
     listObject := 0
+    gui := 0
+
+    oldGUIcall := 0
 
     __New(listObject,outsideGUICaller ){
         this.showStatus := 0
@@ -205,10 +241,12 @@ class SubMainGUIManger {
         this.listObject := listObject
        
         loop this.listObject.Length{
-            i := A_Index
-            this.mainGui.Add("Button","V" i  ,this.listObject[i].ButtonName)
+            this.mainGui.Add(this.listObject[A_Index].ctrlType ,"V" A_Index  ,this.listObject[A_Index].ButtonName)
             .OnEvent("Click", clickAction ) ;(this.listObject[i].action)
         }
+
+
+
 
 
         ; for item in this.listObject{
@@ -219,8 +257,10 @@ class SubMainGUIManger {
 
         clickAction(GuiCtrlObj,*){
             ; MsgBox(GuiCtrlObj.name)
-            b := Number(GuiCtrlObj.name)
-            (this.listObject[b].action)
+            i := Number(GuiCtrlObj.name)
+
+
+            this.listObject[i].action.Call("x" this.oldGUIcall.x + this.guiSize.w " y" this.oldGUIcall.y )
             
             
             ; SetTimer(listLoader__Object[b].action ,-1) ;this work
@@ -242,25 +282,39 @@ class SubMainGUIManger {
 
 }
 
-    manageShow(opt := ""){
+    manageShow(x , y){
+        this.oldGUIcall := {
+            x  : x,
+            y : y
+        }
+
         if this.showStatus == 0{
             this.showStatus := 1
-            this.Show(opt)
+            this.Show(x , y)
         }else{
             this.showStatus := 0
             this.Hide()
         }
     }
     
-    show(option := ""){
-        this.mainGui.Show(option)
+    show(x , y){
+        this.mainGui.Show("x" x  " y" y )
         
+        WinGetPos(,,&_W,&_H,this.mainGUI)
+            
+        this.GuiSize := {
+            w : _w,
+            h : _h
+        }
+
+
         watchGUIandHideIt__timer(guiObj){
             if  WinActive(guiObj){
                 return
             }
 
             else {
+                this.showStatus := 0
                 guiObj.hide()
                 SetTimer(,0)
             }
@@ -305,31 +359,58 @@ class overlayMainLauncher {
     }
     mainGui := 0
     showStatus := 0
-    
+    BackColor := 0
+
     location :={
         x : 0,
-        y : A_ScreenHeight*0.3
+        ; y : A_ScreenHeight*0.3
+        y: 0
     }
 
     guiSize := 0
     
     OutsideGUICaller := 0 ;use this to run outside gui when you click on the button
 
-    __New(OutsideGUICaller, FontSize := 20) {
-        this.mainGUI := Gui("AlwaysOnTop   -Caption")
+    __New(OutsideGUICaller, screenN , FontSize := 20 , BackColor := "09d709"){ 
+        this.mainGUI := Gui("AlwaysOnTop  -Caption +ToolWindow")
+        
+        screenSize :=  monitorGetSize(screenN) 
+        this.location.y := screenSize.y + (screenSize.high * 0.3)
+
+        this.location.x := screenSize.x ;+ (screenSize.width /2)
+
+        this.BackColor := BackColor
+        ; MsgBox(this.location.x "`n" this.location.y)
         
 
         this.OutsideGUICaller := OutsideGUICaller
 
 
         this.mainGUI.MarginX := 0 , this.mainGUI.Marginy := 0
-        this.mainGUI.BackColor := "09d709"
+        this.mainGUI.BackColor := this.BackColor
         WinSetTransparent(250,this.mainGUI)
         
         
         this.mainGUI.SetFont("s" FontSize )
         this.startButton := this.mainGUI.Add("Text",,"    ")
         this.mainGUI.SetFont()
+
+
+        monitorGetSize(N){
+            (monitorGetWorkArea(N,&x1,&y1,&x2,&y2))
+            high := y2 - y1,
+            width := x2 - x1
+            return {
+                high : high,
+                width : width,
+                x : x1,
+                y : y1
+            }
+            
+        }
+
+
+
     }
 
 
@@ -360,8 +441,8 @@ class overlayMainLauncher {
         
         this.startButton.OnEvent("Click",(*)=> 
         this.OutsideGUICaller.manageShow(
-        "x" (this.location.x + this.guiSize.w + this.fixGab.x) 
-        " y" (this.location.y )) 
+        (this.location.x + this.guiSize.w + this.fixGab.x) ,
+        (this.location.y )) 
     )
 
 

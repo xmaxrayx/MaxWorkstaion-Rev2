@@ -1,0 +1,20 @@
+﻿\\\[2ndmontior.ahk]------------[12:44:35 AM 7/30/2024]\\\
+Error on line 8: Parameter #1 of SysGet requires a Number, but received an empty string.
+
+
+\\\[2ndmontior.ahk]------------[12:46:19 AM 7/30/2024]\\\
+Error on line 10: Parameter #1 of MonitorGetWorkArea is invalid.
+
+
+\\\[2ndmontior.ahk]------------[12:46:37 AM 7/30/2024]\\\
+Error on line 10: Parameter #1 of MonitorGetWorkArea is invalid.
+
+
+\\\[2ndmontior.ahk]------------[12:47:13 AM 7/30/2024]\\\
+Error on line 12: Parameter #1 of MsgBox requires a String, but received a Func.
+
+
+\\\[2ndmontior.ahk]------------[10:48:27 AM 7/30/2024]\\\
+Error on line 19: Parameter #1 of MsgBox requires a String, but received an Object.
+
+

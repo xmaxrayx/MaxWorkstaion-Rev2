@@ -270,3 +270,93 @@ Error on line 209: This value of type "String" has no property named "__Item".
 Error on line 209: This value of type "String" has no property named "__Item".
 
 
+\\\[MainLauncher.ahk]------------[11:33:46 AM 7/28/2024]\\\
+Error on line 223: This value of type "Func" has no method named "action".
+
+
+\\\[MainLauncher.ahk]------------[11:36:57 AM 7/28/2024]\\\
+Error on line 223: Too many parameters passed to function.
+
+
+\\\[MainLauncher.ahk]------------[11:37:38 AM 7/28/2024]\\\
+Error on line 224: This value of type "Func" has no method named "action".
+
+
+\\\[MainLauncher.ahk]------------[11:37:54 AM 7/28/2024]\\\
+Error on line 224: This value of type "Func" has no method named "q".
+
+
+\\\[MainLauncher.ahk]------------[11:57:23 AM 7/28/2024]\\\
+Error on line 226: Too many parameters passed to function.
+
+
+\\\[MainLauncher.ahk]------------[11:57:32 AM 7/28/2024]\\\
+Error on line 226: This value of type "Func" has no method named "action".
+
+
+\\\[MainLauncher.ahk]------------[12:35:29 PM 7/28/2024]\\\
+Error on line 226: Too many parameters passed to function.
+
+
+\\\[MainLauncher.ahk]------------[12:35:54 PM 7/28/2024]\\\
+Error on line 226: Too many parameters passed to function.
+
+
+\\\[MainLauncher.ahk]------------[12:37:07 PM 7/28/2024]\\\
+Error on line 226: Too many parameters passed to function.
+
+
+\\\[MainLauncher.ahk]------------[12:39:10 PM 7/28/2024]\\\
+Error on line 226: Too many parameters passed to function.
+
+
+\\\[MainLauncher.ahk]------------[2:45:51 PM 7/28/2024]\\\
+Error on line 226: Too many parameters passed to function.
+
+
+\\\[MainLauncher.ahk]------------[2:46:02 PM 7/28/2024]\\\
+Error on line 226: Too many parameters passed to function.
+
+
+\\\[MainLauncher.ahk]------------[7:14:49 PM 7/28/2024]\\\
+Error on line 380: Missing a required parameter.
+
+
+\\\[MainLauncher.ahk]------------[7:15:02 PM 7/28/2024]\\\
+Error on line 380: Missing a required parameter.
+
+
+\\\[MainLauncher.ahk]------------[9:27:08 AM 7/29/2024]\\\
+Error on line 376: Invalid option.
+
+
+\\\[MainLauncher.ahk]------------[9:27:19 AM 7/29/2024]\\\
+Error on line 376: Invalid option.
+
+
+\\\[MainLauncher.ahk]------------[9:27:25 AM 7/29/2024]\\\
+Error on line 376: Invalid option.
+
+
+\\\[MainLauncher.ahk]------------[9:27:35 AM 7/29/2024]\\\
+Error on line 376: Invalid option.
+
+
+\\\[MainLauncher.ahk]------------[4:15:47 AM 7/30/2024]\\\
+Error on line 86: Invalid index.
+
+
+\\\[MainLauncher.ahk]------------[11:06:35 AM 7/30/2024]\\\
+Error on line 6: Parameter #1 of MsgBox requires a String, but received an Object.
+
+
+\\\[MainLauncher.ahk]------------[11:21:56 AM 7/30/2024]\\\
+Error on line 45: Missing a required parameter.
+
+
+\\\[MainLauncher.ahk]------------[11:47:08 AM 7/30/2024]\\\
+Error on line 142: Failed attempt to launch program or document:
+Action: < Files\CELSYS\CLIP STUDIO 1.5\CLIP STUDIO PAINT\CLIPStudioPaint.exe>
+Params: <>
+
+

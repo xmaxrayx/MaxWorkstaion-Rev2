@@ -12,23 +12,52 @@
 
 
 
-smallfun(){
-    MsgBox(1)
-    MsgBox(2)
-    MsgBox(3)
-}
+; smallfun(){
+;     MsgBox(1)
+;     MsgBox(2)
+;     MsgBox(3)
+; }
 
 
 
 
-; callss() => smallfun()
+; ; callss() => smallfun()
 
-; callss()
+; ; callss()
 
 
-ff(*) => MsgBox(111)
+; ff(*) => MsgBox(111)
 
-dd() => (MsgBox(1) , MsgBox(2) ,MsgBox(3))
+; dd() => (MsgBox(1) , MsgBox(2) ,MsgBox(3))
 
-dd
-ff
+; dd
+; ff
+
+
+
+
+s(ss)=> MsgBox(ss +1)
+
+s(1)
+
+
+
+
+
+
+
+;  AbcFunc(){
+
+;     text:= "hello"
+;     doMsg(){
+
+;         MsgBox(text)
+;     }
+
+;     return({result : 1 ,msg : (*)=> doMsg()})
+
+; }
+
+
+; A := AbcFunc()
+; a.msg

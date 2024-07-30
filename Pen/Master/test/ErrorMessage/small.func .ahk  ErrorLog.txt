@@ -14,3 +14,11 @@ Error on line 10: Parameter #1 of MsgBox requires a String, but received a Func.
 Error on line 10: Parameter #1 of MsgBox requires a String, but received a Func.
 
 
+\\\[small.func .ahk]------------[11:56:35 AM 7/28/2024]\\\
+Error on line 50: Too many parameters passed to function.
+
+
+\\\[small.func .ahk]------------[11:56:37 AM 7/28/2024]\\\
+Error on line 50: Too many parameters passed to function.
+
+
