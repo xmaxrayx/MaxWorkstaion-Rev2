@@ -360,3 +360,296 @@ Action: < Files\CELSYS\CLIP STUDIO 1.5\CLIP STUDIO PAINT\CLIPStudioPaint.exe>
 Params: <>
 
 
+\\\[MainLauncher.ahk]------------[7:39:33 PM 7/30/2024]\\\
+Error on line 329: Parameter #1 of MonitorGetWorkArea is invalid.
+
+
+\\\[MainLauncher.ahk]------------[7:40:17 PM 7/30/2024]\\\
+Error on line 28: No value was returned.
+
+
+\\\[MainLauncher.ahk]------------[7:40:29 PM 7/30/2024]\\\
+Error on line 65: Failed attempt to launch program or document:
+Action: <ClipStudioPaint>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[7:40:48 PM 7/30/2024]\\\
+Error on line 65: Failed attempt to launch program or document:
+Action: <ClipStudioPaint>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[7:41:47 PM 7/30/2024]\\\
+Error on line 65: Failed attempt to launch program or document:
+Action: <ClipStudioPaint>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[7:42:20 PM 7/30/2024]\\\
+Error on line 65: Failed attempt to launch program or document:
+Action: <ClipStudioPaint>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[7:47:17 PM 7/30/2024]\\\
+Error on line 43: This value of type "String" has no property named "__Item".
+
+
+\\\[MainLauncher.ahk]------------[7:52:03 PM 7/30/2024]\\\
+Error on line 29: Invalid index.
+
+
+\\\[MainLauncher.ahk]------------[7:53:30 PM 7/30/2024]\\\
+Error on line 29: Invalid index.
+
+
+\\\[MainLauncher.ahk]------------[7:53:40 PM 7/30/2024]\\\
+Error on line 29: Invalid index.
+
+
+\\\[MainLauncher.ahk]------------[7:53:44 PM 7/30/2024]\\\
+Error on line 29: Invalid index.
+
+
+\\\[MainLauncher.ahk]------------[7:54:01 PM 7/30/2024]\\\
+Error on line 29: Invalid index.
+
+
+\\\[MainLauncher.ahk]------------[7:54:19 PM 7/30/2024]\\\
+Error on line 29: Invalid index.
+
+
+\\\[MainLauncher.ahk]------------[7:55:38 PM 7/30/2024]\\\
+Error on line 29: Invalid index.
+
+
+\\\[MainLauncher.ahk]------------[8:02:32 PM 7/30/2024]\\\
+Error on line 46: This value of type "String" has no property named "item".
+
+
+\\\[MainLauncher.ahk]------------[8:02:49 PM 7/30/2024]\\\
+Error on line 46: This value of type "String" has no property named "item".
+
+
+\\\[MainLauncher.ahk]------------[8:03:15 PM 7/30/2024]\\\
+Error on line 48: This global variable has not been assigned a value.
+
+
+\\\[MainLauncher.ahk]------------[8:03:36 PM 7/30/2024]\\\
+Error on line 48: This global variable has not been assigned a value.
+
+
+\\\[MainLauncher.ahk]------------[8:03:43 PM 7/30/2024]\\\
+Error on line 48: This global variable has not been assigned a value.
+
+
+\\\[MainLauncher.ahk]------------[8:04:23 PM 7/30/2024]\\\
+Error on line 48: This global variable has not been assigned a value.
+
+
+\\\[MainLauncher.ahk]------------[8:05:07 PM 7/30/2024]\\\
+Error on line 53: No value was returned.
+
+
+\\\[MainLauncher.ahk]------------[8:05:33 PM 7/30/2024]\\\
+Error on line 53: No value was returned.
+
+
+\\\[MainLauncher.ahk]------------[8:06:07 PM 7/30/2024]\\\
+Error on line 53: No value was returned.
+
+
+\\\[MainLauncher.ahk]------------[8:06:27 PM 7/30/2024]\\\
+Error on line 54: No value was returned.
+
+
+\\\[MainLauncher.ahk]------------[8:08:42 PM 7/30/2024]\\\
+Error on line 43: This value of type "String" has no property named "__Item".
+
+
+\\\[MainLauncher.ahk]------------[8:09:03 PM 7/30/2024]\\\
+Error on line 71: Failed attempt to launch program or document:
+Action: < C:\Users\Max_Laptop\2DArt\ArtRefrence>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:09:54 PM 7/30/2024]\\\
+Error on line 71: Failed attempt to launch program or document:
+Action: < C:\Users\Max_Laptop\2DArt\ArtRefrence>
+Verb: <explore>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:13:55 PM 7/30/2024]\\\
+Error on line 71: Failed attempt to launch program or document:
+Action: <2DArt\ArtRefrence>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:14:05 PM 7/30/2024]\\\
+Error on line 71: Failed attempt to launch program or document:
+Action: <2DArt\ArtRefrence>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:14:37 PM 7/30/2024]\\\
+Error on line 71: Failed attempt to launch program or document:
+Action: <2DArt\ArtRefrence>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:15:13 PM 7/30/2024]\\\
+Error on line 71: Failed attempt to launch program or document:
+Action: <2DArt\ArtRefrence>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:15:15 PM 7/30/2024]\\\
+Error on line 71: Failed attempt to launch program or document:
+Action: <2DArt\ArtRefrence>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:16:16 PM 7/30/2024]\\\
+Error on line 71: Failed attempt to launch program or document:
+Action: <2DArt\ArtRefrence>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:17:11 PM 7/30/2024]\\\
+Error on line 72: Failed attempt to launch program or document:
+Action: <2DArt\ArtRefrence>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:17:29 PM 7/30/2024]\\\
+Error on line 72: Failed attempt to launch program or document:
+Action: < explore C:\Users\Max_Laptop\2DArt\ArtRefrence>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:17:42 PM 7/30/2024]\\\
+Error on line 72: Failed attempt to launch program or document:
+Action: < explore C:\Users\Max_Laptop\2DArt\ArtRefrence>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:17:45 PM 7/30/2024]\\\
+Error on line 72: Failed attempt to launch program or document:
+Action: < explore C:\Users\Max_Laptop\2DArt\ArtRefrence>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:17:54 PM 7/30/2024]\\\
+Error on line 72: Failed attempt to launch program or document:
+Action: < explore C:\Users\Max_Laptop\2DArt\ArtRefrence>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:18:16 PM 7/30/2024]\\\
+Error on line 72: Failed attempt to launch program or document:
+Action: < explore  C:\Users\Max_Laptop\2DArt\ArtRefrence>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:18:25 PM 7/30/2024]\\\
+Error on line 72: Failed attempt to launch program or document:
+Action: < C:\Users\Max_Laptop\2DArt\ArtRefrence>
+Verb: <explore>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:18:37 PM 7/30/2024]\\\
+Error on line 72: Failed attempt to launch program or document:
+Action: <2DArt\ArtRefrence>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:18:40 PM 7/30/2024]\\\
+Error on line 72: Failed attempt to launch program or document:
+Action: < C:\Users\Max_Laptop\2DArt\ArtRefrence>
+Verb: <explore>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:19:17 PM 7/30/2024]\\\
+Error on line 72: Failed attempt to launch program or document:
+Action: < "C:\Users\Max_Laptop\2DArt\ArtRefrence">
+Verb: <explore>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:20:14 PM 7/30/2024]\\\
+Error on line 72: Failed attempt to launch program or document:
+Action: < "C:\Users\Max_Laptop\2DArt\ArtRefrence">
+Verb: <explore>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:20:48 PM 7/30/2024]\\\
+Error on line 72: Failed attempt to launch program or document:
+Action: <2DArt\ArtRefrence">
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:20:53 PM 7/30/2024]\\\
+Error on line 72: Failed attempt to launch program or document:
+Action: < explore  "C:\Users\Max_Laptop\2DArt\ArtRefrence">
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:21:20 PM 7/30/2024]\\\
+Error on line 72: Failed attempt to launch program or document:
+Action: < explore C:\Users\Max_Laptop\2DArt\ArtRefrence>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:21:42 PM 7/30/2024]\\\
+Error on line 72: Failed attempt to launch program or document:
+Action: <2DArt\ArtRefrence>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:22:06 PM 7/30/2024]\\\
+Error on line 72: Failed attempt to launch program or document:
+Action: <DArt\ArtRefrence>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:24:20 PM 7/30/2024]\\\
+Error on line 72: Failed attempt to launch program or document:
+Action: <2DArt\ArtRefrence>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:25:24 PM 7/30/2024]\\\
+Error on line 72: Failed attempt to launch program or document:
+Action: <2DArt\ArtRefrence>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[8:26:14 PM 7/30/2024]\\\
+Error on line 72: Failed attempt to launch program or document:
+Action: <\2DArt\ArtRefrence>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[12:47:00 PM 7/31/2024]\\\
+Error on line 65: Failed attempt to launch program or document:
+Action: <ClipStudioPaint>
+Params: <>
+
+
+\\\[MainLauncher.ahk]------------[11:31:58 AM 8/3/2024]\\\
+Error on line 330: Parameter #1 of MonitorGetWorkArea is invalid.
+
+
+\\\[MainLauncher.ahk]------------[11:35:54 AM 8/3/2024]\\\
+Error on line 330: Parameter #1 of MonitorGetWorkArea is invalid.
+
+
+\\\[MainLauncher.ahk]------------[11:35:59 AM 8/3/2024]\\\
+Error on line 330: Parameter #1 of MonitorGetWorkArea is invalid.
+
+
