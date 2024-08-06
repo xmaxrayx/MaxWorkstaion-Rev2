@@ -38,3 +38,51 @@ Error on line 57: Target window not found.
 Error on line 57: Target window not found.
 
 
+\\\[CSP ToolBox.ahk]------------[11:59:20 AM 8/5/2024]\\\
+Error on line 7: Expected a String but got a Func.
+
+
+\\\[CSP ToolBox.ahk]------------[12:01:03 PM 8/5/2024]\\\
+Error on line 8: Target window not found.
+
+
+\\\[CSP ToolBox.ahk]------------[12:01:07 PM 8/5/2024]\\\
+Error on line 8: Target window not found.
+
+
+\\\[CSP ToolBox.ahk]------------[12:01:14 PM 8/5/2024]\\\
+Error on line 8: Target window not found.
+
+
+\\\[CSP ToolBox.ahk]------------[12:02:16 PM 8/5/2024]\\\
+Error on line 9: Target window not found.
+
+
+\\\[CSP ToolBox.ahk]------------[12:02:25 PM 8/5/2024]\\\
+Error on line 9: Target window not found.
+
+
+\\\[CSP ToolBox.ahk]------------[12:05:54 PM 8/5/2024]\\\
+Error on line 9: Target window not found.
+
+
+\\\[CSP ToolBox.ahk]------------[12:05:56 PM 8/5/2024]\\\
+Error on line 9: Target window not found.
+
+
+\\\[CSP ToolBox.ahk]------------[12:08:11 PM 8/5/2024]\\\
+Error on line 9: Target control not found.
+
+
+\\\[CSP ToolBox.ahk]------------[12:11:50 PM 8/5/2024]\\\
+Error on line 11: Target control not found.
+
+
+\\\[CSP ToolBox.ahk]------------[12:11:55 PM 8/5/2024]\\\
+Error on line 9: Target control not found.
+
+
+\\\[CSP ToolBox.ahk]------------[12:22:49 PM 8/5/2024]\\\
+Error on line 9: Target control not found.
+
+

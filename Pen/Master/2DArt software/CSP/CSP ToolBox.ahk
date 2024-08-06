@@ -2,9 +2,22 @@
 #SingleInstance force
 #Include  <maxray\AHKPlusPlus___Folder\AHKPlusPlus___0_2__v>
 
+CSP_EXE := "ahk_exe CLIPStudioPaint.exe"
+SetTimer(()=>,1000)
+MsgBox("timer started")
 
- 
 
+MsgboxOnaActiveWindow(){
+        if  WinActive(CSP_EXE)
+        {
+            MsgBox("start")
+        }
+        
+}
+
+~f::SoundBeep()  ;
+
+/*
 TapGui()
 
 TapGui(){
@@ -40,5 +53,6 @@ TapGui(){
 }
 
 
+*/
 
-    
+; while WinActive("C")

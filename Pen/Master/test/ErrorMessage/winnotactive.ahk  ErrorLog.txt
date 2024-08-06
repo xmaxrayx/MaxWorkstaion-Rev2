@@ -1,0 +1,12 @@
+﻿\\\[winnotactive.ahk]------------[8:07:38 PM 8/5/2024]\\\
+Error on line 11: Too few parameters passed to function.
+
+
+\\\[winnotactive.ahk]------------[8:08:13 PM 8/5/2024]\\\
+Error on line 13: Parameter #1 of MsgBox requires a String, but received a Prototype.
+
+
+\\\[winnotactive.ahk]------------[8:08:19 PM 8/5/2024]\\\
+Error on line 13: This value of type "Integer" has no method named "Base".
+
+
