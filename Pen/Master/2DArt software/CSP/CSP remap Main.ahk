@@ -3,61 +3,56 @@
 #Include  <maxray\AHKPlusPlus___Folder\AHKPlusPlus___0_2__v>
 
 
-global L_Normal_RedCircleMode := "Zoom"
+global L_RedCircle_with__underButton := "Zoom"
 
 
-#HotIf WinActive("ahk_exe CLIPStudioPaint.exe") && L_Normal_RedCircleMode == "Rotate"
+#HotIf WinActive("ahk_exe CLIPStudioPaint.exe")
 ;defoult : rotete
 ;DButton : Zoom
 ;Up Button : BrushSize
 
-
-;--zoom in and out
 ~Space & '::{
-    send("{WheelUp 1}")
+    global L_RedCircle_with__underButton
+    switch [L_RedCircle_with__underButton, 0] {
+        case "Zoom" :
+            send("{WheelUp 1}")
+            
+        default:
+            
+    }
+    
 }
 
 ~Space & -::{
-    send("{WheelDown 1}")
-}
-
-;/---------------------
-
-
-
-
-
-
-
-
-;///////////////////////////||||||||
-;////////////////////////////|||||||
-;////////////////////////////|||||||
-;//////NEW SECTION////////||||||||||
-;////////////////////////|||||||||||
-;//////////////////////|||||||||||||
-;/////////////////////////////||||||
-
-#HotIf WinActive("ahk_exe CLIPStudioPaint.exe") && L_Normal_RedCircleMode == "Zoom"
-
-;-------Zoom
-'::{
-    send("{WheelUp 1}")
-}
-
--::{
-    send("{WheelDown 1}")
+    global L_RedCircle_with__underButton
+    switch [L_RedCircle_with__underButton, 0] {
+        case "Zoom" :
+            send("{WheelDown 1}")
+        default:
+    }
 }
 
 
 
-;---------Rotate
+/*
 ~Space & '::{
-    send("'")
+    global L_Normal_RedCircleMode
+    switch [L_Normal_RedCircleMode, 0] {
+        case "Zoom" :
+            send("{WheelUp 1}")
+            
+        default:
+            
+    }
+    
 }
 
 ~Space & -::{
-    send("-")
+    global L_Normal_RedCircleMode
+    switch [L_Normal_RedCircleMode, 0] {
+        case "Zoom" :
+            send("{WheelDown 1}")
+        default:
+    }
 }
-
-;------------------
+*/
