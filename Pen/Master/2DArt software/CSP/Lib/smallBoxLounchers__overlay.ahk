@@ -369,10 +369,6 @@ class overlayMainLauncher {
         }
         
         this.startButton.OnEvent("Click",(*)=> 
-        this.OutsideGUICaller.manageShow(
-        (this.location.x + this.guiSize.w + this.fixGab.x) ,
-        (this.location.y )) 
-    )
 
 
     }
