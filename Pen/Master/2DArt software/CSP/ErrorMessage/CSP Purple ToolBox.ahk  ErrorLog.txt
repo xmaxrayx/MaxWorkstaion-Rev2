@@ -1,0 +1,32 @@
+﻿\\\[CSP Purple ToolBox.ahk]------------[10:21:38 AM 8/6/2024]\\\
+Error on line 53: This global variable has not been assigned a value.
+
+
+\\\[CSP Purple ToolBox.ahk]------------[10:21:44 AM 8/6/2024]\\\
+Error on line 53: This global variable has not been assigned a value.
+
+
+\\\[CSP Purple ToolBox.ahk]------------[10:22:01 AM 8/6/2024]\\\
+Error on line 53: This global variable has not been assigned a value.
+
+
+\\\[CSP Purple ToolBox.ahk]------------[10:26:12 AM 8/6/2024]\\\
+Error on line 307: Invalid option.
+
+
+\\\[CSP Purple ToolBox.ahk]------------[10:30:57 AM 8/6/2024]\\\
+Error on line 101: This value of type "SubMainGUIManger" has no property named "Hwnd".
+
+
+\\\[CSP Purple ToolBox.ahk]------------[10:59:09 AM 8/6/2024]\\\
+Error on line 101: Parameter #3 of WinMove requires a Number, but received a Gui.
+
+
+\\\[CSP Purple ToolBox.ahk]------------[11:01:45 AM 8/6/2024]\\\
+Error on line 101: This value of type "SubMainGUIManger" has no property named "mainGui__ID".
+
+
+\\\[CSP Purple ToolBox.ahk]------------[11:04:05 AM 8/6/2024]\\\
+Error on line 101: This value of type "SubMainGUIManger" has no property named "mainGui__ID".
+
+

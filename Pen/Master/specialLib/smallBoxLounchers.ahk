@@ -160,54 +160,35 @@ class SubMainGUIManger {
     listObject := 0
     gui := 0
     GUI__ID := 0
-
+    overlay := 0
     oldGUIcall := 0
 
-    __New(listObject,outsideGUICaller ){
+    __New(listObject,outsideGUICaller , Overlay:=0 ){
         this.showStatus := 0
-        this.mainGui := Gui("AlwaysOnTop   -Caption")
-        
+        this.overlay := Overlay
+        WS_EX_NOACTIVATE := 0x08000000
+
+        this.mainGui := Gui("AlwaysOnTop  -Caption +E" WS_EX_NOACTIVATE)
         this.listObject := listObject
-       
+
+        ;//////////////// build section/////////////
         loop this.listObject.Length{
             this.mainGui.Add(this.listObject[A_Index].ctrlType ,"V" A_Index  ,this.listObject[A_Index].ButtonName)
             .OnEvent("Click", clickAction ) ;(this.listObject[i].action)
         }
 
-
-
-
-
-        ; for item in this.listObject{
-        ;     MsgBox(item.ButtonName)
-        ;     this.mainGUI.AddButton("v" A_Index).OnEvent("Click",(*)=> clickAction)
-        ; }
-
-
         clickAction(GuiCtrlObj,*){
-            ; MsgBox(GuiCtrlObj.name)
             i := Number(GuiCtrlObj.name)
-
-
             this.listObject[i].action.Call("x" this.oldGUIcall.x + this.guiSize.w " y" this.oldGUIcall.y )
-            
-            
-            ; SetTimer(listLoader__Object[b].action ,-1) ;this work
-            ; ()=> this.listObject[b].action.Call()
-
         }
         
         m(GuiCtrlObj, info){
             MsgBox(GuiCtrlObj.name)
         }
+        ;/////////////////////////end of building/////////////////////
 
-        this.GUI__ID := WinGetID(this.mainGUI)
 
-        ; for item in this.listObject{
-        ;     this.mainGui.Add("Button",,item.ButtonName).OnEvent("Click",(*)=> item.action)
-        ; }
 
-    
 
 }
 
@@ -227,10 +208,9 @@ class SubMainGUIManger {
     }
     
     show(x , y){
-        this.mainGui.Show(" x" x  " y" y )
-        
+        this.mainGui.Show("NoActivate x" x  " y" y )
+        this.GUI__ID := WinGetID(this.mainGUI)
         WinGetPos(,,&_W,&_H,this.mainGUI)
-            
         this.GuiSize := {
             w : _w,
             h : _h
@@ -238,6 +218,26 @@ class SubMainGUIManger {
 
 
         watchGUIandHideIt__timer(guiObj){
+
+            if this.overlay != 0{
+                if WinActive(guiObj) || WinActive(this.overlay){
+                    return
+                }
+
+
+                else{
+                    this.showStatus := 0
+                    guiObj.hide()
+                    SetTimer(,0)
+                }
+
+
+
+            }
+
+
+
+
             if  WinActive(guiObj){
                 return
             }
@@ -251,8 +251,6 @@ class SubMainGUIManger {
         }
 
         SetTimer(()=>watchGUIandHideIt__timer(this.mainGui),100)
-    
-        
     }
 
     hide(){
@@ -300,13 +298,13 @@ class overlayMainLauncher {
     
     OutsideGUICaller := 0 ;use this to run outside gui when you click on the button
 
-    __New(OutsideGUICaller, screenN , FontSize := 20 , BackColor := "09d709"){ 
+    __New(OutsideGUICaller, screenN , FontSize := 20 , BackColor := "09d709" , Y_Location_mod := 0.3){ 
 
         WS_EX_NOACTIVATE := 0x08000000
-        this.mainGUI := Gui("AlwaysOnTop  -Caption +ToolWindow")
+        this.mainGUI := Gui("AlwaysOnTop  -Caption +ToolWindow +E" WS_EX_NOACTIVATE)
         
         screenSize :=  monitorGetSize(screenN) 
-        this.location.y := screenSize.y + (screenSize.high * 0.3)
+        this.location.y := screenSize.y + (screenSize.high * Y_Location_mod)
 
         this.location.x := screenSize.x ;+ (screenSize.width /2)
 
@@ -362,7 +360,7 @@ class overlayMainLauncher {
     show(){
         this.showStatus := 1
         
-        this.mainGUI.Show( "x" this.location.x " y" this.location.y " NA" )   
+        this.mainGUI.Show( "x" this.location.x " y" this.location.y " NoActivate" )   
         WinGetPos(,,&_W,&_H,this.mainGUI)
         
         this.GuiSize := {

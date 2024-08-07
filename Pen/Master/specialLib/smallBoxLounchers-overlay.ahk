@@ -228,7 +228,7 @@ class SubMainGUIManger {
     }
     
     show(x , y){
-        this.mainGui.Show("x" x  " y" y )
+        this.mainGui.Show(" x" x  " y" y )
         
         WinGetPos(,,&_W,&_H,this.mainGUI)
             
@@ -302,6 +302,8 @@ class overlayMainLauncher {
     OutsideGUICaller := 0 ;use this to run outside gui when you click on the button
 
     __New(OutsideGUICaller, screenN , FontSize := 20 , BackColor := "09d709"){ 
+
+        WS_EX_NOACTIVATE := 0x08000000
         this.mainGUI := Gui("AlwaysOnTop  -Caption +ToolWindow")
         
         screenSize :=  monitorGetSize(screenN) 
@@ -361,7 +363,7 @@ class overlayMainLauncher {
     show(){
         this.showStatus := 1
         
-        this.mainGUI.Show( "x" this.location.x " y" this.location.y )   
+        this.mainGUI.Show( "x" this.location.x " y" this.location.y " NoActivate" )   
         WinGetPos(,,&_W,&_H,this.mainGUI)
         
         this.GuiSize := {
