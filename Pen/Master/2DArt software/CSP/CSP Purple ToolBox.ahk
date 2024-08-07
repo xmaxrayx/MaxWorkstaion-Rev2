@@ -85,7 +85,7 @@ listLoader__Object := [
 
 
 subMaster := SubMainGUIManger(listLoader__Object,"", CSP_EXE)
-Main := overlayMainLauncher(subMaster,KScreenN,, "d51ead" , 0.1)
+Main := overlayMainLauncher(subMaster,KScreenN,, "d51ead" , 0.1 ,CSP_EXE)
 
 
 

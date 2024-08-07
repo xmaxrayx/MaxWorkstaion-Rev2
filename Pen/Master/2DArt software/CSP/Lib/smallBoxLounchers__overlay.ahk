@@ -369,6 +369,31 @@ class overlayMainLauncher {
         }
         
         this.startButton.OnEvent("Click",(*)=> 
+                        this.OutsideGUICaller.manageShow(
+                        (this.location.x + this.guiSize.w + this.fixGab.x) ,
+                        (this.location.y ))
+    
+                                                          )
+        if this.WatchedOverlayApp != 0{
+            SetTimer(watchifAppisNotActive(), 500)
+
+
+        }
+
+
+        watchifAppisNotActive(){
+            if WinActive(this.WatchedOverlayApp){
+                return
+            }else if WinActive(this.OutsideGUICaller){
+                return
+            }
+            else{
+                WinActive(this.OutsideGUICaller)
+            }
+        }
+              
+
+
 
 
     }

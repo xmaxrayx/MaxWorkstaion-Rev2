@@ -34,3 +34,27 @@ Error on line 101: This value of type "SubMainGUIManger" has no property named "
 Error on line 87: Too many parameters passed to function.
 
 
+\\\[CSP Purple ToolBox.ahk]------------[11:59:21 AM 8/7/2024]\\\
+Error on line 310: This value of type "Integer" has no method named "SetFont".
+
+
+\\\[CSP Purple ToolBox.ahk]------------[11:59:24 AM 8/7/2024]\\\
+Error on line 310: This value of type "Integer" has no method named "SetFont".
+
+
+\\\[CSP Purple ToolBox.ahk]------------[11:59:43 AM 8/7/2024]\\\
+Error on line 310: This value of type "Integer" has no method named "SetFont".
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:00:05 PM 8/7/2024]\\\
+Error on line 310: This value of type "Integer" has no method named "SetFont".
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:00:17 PM 8/7/2024]\\\
+Error on line 377: Parameter #1 of SetTimer requires an Object, but received an empty string.
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:00:27 PM 8/7/2024]\\\
+Error on line 377: Parameter #1 of SetTimer requires an Object, but received an empty string.
+
+
