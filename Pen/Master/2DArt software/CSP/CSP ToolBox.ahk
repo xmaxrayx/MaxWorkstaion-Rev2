@@ -2,12 +2,19 @@
 #SingleInstance force
 #Include  <maxray\AHKPlusPlus___Folder\AHKPlusPlus___0_2__v>
 
+<<<<<<< HEAD
 CSP_EXE := "ahk_exe CLIPStudioPaint.exe"
+=======
+>>>>>>> parent of 68e119c (add)
 
+ 
 
+<<<<<<< HEAD
 ~f::SoundBeep()  ;
 
 
+=======
+>>>>>>> parent of 68e119c (add)
 TapGui()
 
 TapGui(){           
@@ -43,6 +50,9 @@ WS_EX_NOACTIVATE := 0x08000000
 }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 68e119c (add)
 
-; while WinActive("C")
+    

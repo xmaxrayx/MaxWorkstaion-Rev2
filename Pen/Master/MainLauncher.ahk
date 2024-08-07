@@ -1,32 +1,13 @@
-; #Requires AutoHotkey >=2.1- <3.0
+#Requires AutoHotkey >=2.1- <3.0
 #SingleInstance force
 #Include  <maxray\AHKPlusPlus___Folder\AHKPlusPlus___0_3__v>
 #Include  "specialLib\smallBoxLounchers.ahk"
 
 
 
-;///////////Select a  screen//////////////////////
+;///////////declaring global variable//////////////////////
 
-
-KScreenN := _KScreenN(2)
-
-
-
-
-
-
-_KScreenN(ScreenSelect_Number){
-
-    MonitorCount := MonitorGetCount()
-
-    if ScreenSelect_Number > MonitorCount
-        return MonitorCount
-
-    else return ScreenSelect_Number
-
-}
-
-
+global KScreenN := 1
 
 
 ;///////////intiallzing classes and functions section//////////////
