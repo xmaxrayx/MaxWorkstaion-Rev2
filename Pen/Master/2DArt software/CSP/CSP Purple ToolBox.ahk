@@ -81,10 +81,10 @@ listLoader__Object := [
 
 ;;;;
 
+s := FakeTranparentGUI()
+subMaster := SubMainGUIManger(listLoader__Object,"", CSP_EXE , ()=> (s.show()))
+s.overlay_manu := subMaster
 
-
-
-subMaster := SubMainGUIManger(listLoader__Object,"", CSP_EXE)
 Main := overlayMainLauncher(subMaster,KScreenN,, "d51ead" , 0.1 ,CSP_EXE)
 
 

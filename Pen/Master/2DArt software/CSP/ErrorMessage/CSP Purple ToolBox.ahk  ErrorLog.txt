@@ -58,3 +58,115 @@ Error on line 377: Parameter #1 of SetTimer requires an Object, but received an 
 Error on line 377: Parameter #1 of SetTimer requires an Object, but received an empty string.
 
 
+\\\[CSP Purple ToolBox.ahk]------------[12:03:22 PM 8/7/2024]\\\
+Error on line 88: Too many parameters passed to function.
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:05:34 PM 8/7/2024]\\\
+Error on line 383: Parameter #1 of SetTimer requires an Object, but received an empty string.
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:05:37 PM 8/7/2024]\\\
+Error on line 383: Parameter #1 of SetTimer requires an Object, but received an empty string.
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:06:12 PM 8/7/2024]\\\
+Error on line 392: This value of type "SubMainGUIManger" has no property named "Hwnd".
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:06:19 PM 8/7/2024]\\\
+Error on line 392: This value of type "SubMainGUIManger" has no property named "Hwnd".
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:06:20 PM 8/7/2024]\\\
+Error on line 392: This value of type "SubMainGUIManger" has no property named "Hwnd".
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:06:20 PM 8/7/2024]\\\
+Error on line 392: This value of type "SubMainGUIManger" has no property named "Hwnd".
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:06:21 PM 8/7/2024]\\\
+Error on line 392: This value of type "SubMainGUIManger" has no property named "Hwnd".
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:06:22 PM 8/7/2024]\\\
+Error on line 392: This value of type "SubMainGUIManger" has no property named "Hwnd".
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:25:10 PM 8/7/2024]\\\
+Error on line 425: Invalid option.
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:29:25 PM 8/7/2024]\\\
+Error on line 165: Parameter #2 of Object.Prototype.DefineProp is invalid.
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:31:21 PM 8/7/2024]\\\
+Error on line 165: Parameter #2 of Object.Prototype.DefineProp is invalid.
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:31:33 PM 8/7/2024]\\\
+Error on line 165: Parameter #2 of Object.Prototype.DefineProp is invalid.
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:32:11 PM 8/7/2024]\\\
+Error on line 431: This local variable has not been assigned a value.
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:33:52 PM 8/7/2024]\\\
+Error on line 431: This local variable has not been assigned a value.
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:34:22 PM 8/7/2024]\\\
+Error on line 431: This local variable has not been assigned a value.
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:35:14 PM 8/7/2024]\\\
+Error on line 84: This global variable has not been assigned a value.
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:36:11 PM 8/7/2024]\\\
+Error on line 84: This global variable has not been assigned a value.
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:36:22 PM 8/7/2024]\\\
+Error on line 223: This value of type "FakeTranparentGUI" has no method named "Call".
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:36:59 PM 8/7/2024]\\\
+Error on line 223: This value of type "FakeTranparentGUI" has no method named "Call".
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:37:02 PM 8/7/2024]\\\
+Error on line 223: This value of type "FakeTranparentGUI" has no method named "Call".
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:37:14 PM 8/7/2024]\\\
+Error on line 223: This value of type "FakeTranparentGUI" has no method named "Call".
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:37:23 PM 8/7/2024]\\\
+Error on line 223: This value of type "FakeTranparentGUI" has no method named "Call".
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:39:06 PM 8/7/2024]\\\
+Error on line 429: Invalid option.
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:39:22 PM 8/7/2024]\\\
+Error on line 431: This local variable has not been assigned a value.
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:39:31 PM 8/7/2024]\\\
+Error on line 431: This local variable has not been assigned a value.
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:39:36 PM 8/7/2024]\\\
+Error on line 431: This local variable has not been assigned a value.
+
+
+\\\[CSP Purple ToolBox.ahk]------------[12:42:17 PM 8/7/2024]\\\
+Error on line 431: This value of type "FakeTranparentGUI" has no method named "mainGui".
+
+

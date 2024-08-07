@@ -149,7 +149,7 @@ class DrawingAppListGUI {
 
 
 
-
+    
 
 
 
@@ -162,10 +162,14 @@ class SubMainGUIManger {
     GUI__ID := 0
     overlay := 0
     oldGUIcall := 0
-
-    __New(listObject,outsideGUICaller , Overlay:=0 ){
+    FakeTranparentGUI := 0 
+    __New(listObject,outsideGUICaller , Overlay:=0 ,FakeTranparentGUI := 0 ){
         this.showStatus := 0
         this.overlay := Overlay
+
+        this.FakeTranparentGUI := FakeTranparentGUI
+
+
         WS_EX_NOACTIVATE := 0x08000000
 
         this.mainGui := Gui("AlwaysOnTop  -Caption +E" WS_EX_NOACTIVATE)
@@ -216,7 +220,7 @@ class SubMainGUIManger {
             h : _h
         }
 
-
+        s.show()
         watchGUIandHideIt__timer(guiObj){
 
             if this.overlay != 0{
@@ -278,7 +282,7 @@ class SubMainGUIManger {
 
 
 class overlayMainLauncher {
-    
+    WatchedOverlayApp :=0 
     startButton := 0
     fixGab := {
         x : 2,
@@ -298,7 +302,12 @@ class overlayMainLauncher {
     
     OutsideGUICaller := 0 ;use this to run outside gui when you click on the button
 
-    __New(OutsideGUICaller, screenN , FontSize := 20 , BackColor := "09d709" , Y_Location_mod := 0.3){ 
+    __New(OutsideGUICaller, screenN , FontSize := 20 , BackColor := "09d709" , Y_Location_mod := 0.3 ,WatchedOverlayApp:=0){ 
+
+        if WatchedOverlayApp != 0{
+            this.WatchedOverlayApp := WatchedOverlayApp
+        }
+
 
         WS_EX_NOACTIVATE := 0x08000000
         this.mainGUI := Gui("AlwaysOnTop  -Caption +ToolWindow +E" WS_EX_NOACTIVATE)
@@ -375,7 +384,7 @@ class overlayMainLauncher {
     
                                                           )
         if this.WatchedOverlayApp != 0{
-            SetTimer(watchifAppisNotActive(), 500)
+            SetTimer(watchifAppisNotActive, 500)
 
 
         }
@@ -384,12 +393,13 @@ class overlayMainLauncher {
         watchifAppisNotActive(){
             if WinActive(this.WatchedOverlayApp){
                 return
-            }else if WinActive(this.OutsideGUICaller){
+            }else if WinActive(this.OutsideGUICaller.mainGUI){
                 return
             }
-            else{
-                WinActive(this.OutsideGUICaller)
-            }
+            
+            this.OutsideGUICaller.hide()
+            SetTimer(,0)
+            
         }
               
 
@@ -406,4 +416,23 @@ class overlayMainLauncher {
 
 
 
+}
+
+
+
+
+class FakeTranparentGUI {
+    mainGui := 0
+    overlay_manu := 0
+
+    __New(overlay_manu?) {
+        this.mainGui := Gui(" +E0x08000000 -Caption +LastFound +ToolWindow +AlwaysOnTop")
+        WinSetTransparent(100,this.mainGui)
+        ; this.mainGui("H200")
+        this.mainGui.Add("Button",,"&Hello").OnEvent("Click", (*)=>  this.overlay_manu.hide()  )
+    }
+
+    show(){
+        this.mainGui.show("NoActivate h999 w999")
+    }
 }
