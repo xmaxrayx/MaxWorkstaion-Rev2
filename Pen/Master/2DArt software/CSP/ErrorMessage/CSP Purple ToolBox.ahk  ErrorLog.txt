@@ -30,3 +30,7 @@ Error on line 101: This value of type "SubMainGUIManger" has no property named "
 Error on line 101: This value of type "SubMainGUIManger" has no property named "mainGui__ID".
 
 
+\\\[CSP Purple ToolBox.ahk]------------[11:26:54 AM 8/7/2024]\\\
+Error on line 87: Too many parameters passed to function.
+
+
