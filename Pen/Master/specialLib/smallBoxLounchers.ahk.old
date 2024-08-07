@@ -88,7 +88,7 @@ class DrawingAppListGUI {
 
 
     AutoCloseGUI(GuiID){
-        SetTimer(___AutoCloseGUI , 100)
+        SetTimer(___AutoCloseGUI , 500)
         
         ___AutoCloseGUI(*) {
             if WinActive(GuiID){
@@ -132,7 +132,7 @@ class DrawingAppListGUI {
 
     }
 
-    SetTimer(()=>watchGUIandHideIt__timer(this.mainGui),500)
+    SetTimer(()=>watchGUIandHideIt__timer(this.mainGui),7000)
 
 
 
